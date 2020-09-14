@@ -35,6 +35,7 @@ RUN apk add --update --no-cache \
 		passlib \
 		kubernetes==${KUBE_CLIENT_VERSION} \
 		kubernetes-ws-patch==${KUBE_WS_PATCH_VERSION} \
+		packaging \
 	&& apk del --purge build-dependencies \
 	&& rm -fr \
 		/var/cache/apk/* \
